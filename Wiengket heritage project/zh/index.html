@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<link rel="alternate" hreflang="en" href="../index.html">
+<link rel="alternate" hreflang="th" href="../th/index.html">
+<link rel="alternate" hreflang="zh-Hans" href="../zh/index.html">
+<link rel="alternate" hreflang="ja" href="../ja/index.html">
+<link rel="alternate" hreflang="x-default" href="../index.html">
+<link rel="canonical" href="../zh/index.html">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wiengket Heritage Staging (ZH)</title>
+<meta name="description" content="曼谷老城区的怀旧精品住宿。官网预订立减 10%。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Cinzel:wght@500;600&family=Noto+Serif+Thai:wght@500;600&family=IBM+Plex+Sans+Thai:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#f4eee3; --paper:#faf6ee; --ink:#2b2620; --muted:#6f6558;
+  --green:#1f3a31; --green-2:#284a3f; --brown:#7a3f2a; --brass:#b08d57; --line:#ddd2bf;
+  --serif:'Cormorant Garamond','Noto Serif Thai',serif; --caps:'Cinzel','Noto Serif Thai',serif;
+  --sans:'IBM Plex Sans Thai',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:300;line-height:1.7;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1200px,100% - 32px);margin-inline:auto}
+.eyebrow{font-family:var(--sans);font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--brass);font-weight:500}
+.h2{font-family:var(--caps);font-weight:500;font-size:clamp(28px,4vw,46px);line-height:1.15;letter-spacing:.02em}
+.th{font-family:'Noto Serif Thai',serif;font-weight:500}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;font-weight:500;font-size:14px;letter-spacing:.06em;border:1px solid currentColor;transition:.35s;cursor:pointer;background:none;font-family:var(--sans)}
+.btn-solid{background:var(--green);color:#fff;border-color:var(--green)}
+.btn-solid:hover{background:var(--brown);border-color:var(--brown)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.btn .arr{transition:transform .3s}.btn:hover .arr{transform:translateX(5px)}
+
+/* NAV */
+nav{position:fixed;inset:0 0 auto;z-index:50;transition:.4s;color:#fff}
+nav.solid{background:rgba(250,246,238,.96);color:var(--ink);box-shadow:0 1px 0 var(--line);backdrop-filter:blur(8px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
+.logo{display:flex;align-items:center;gap:10px}
+.logo img{height:52px;width:auto;border-radius:50%;background:#fff;padding:3px}
+.logo b{font-family:var(--caps);font-size:20px;font-weight:600;letter-spacing:.08em;display:block;line-height:1}
+.logo small{font-family:var(--serif);font-size:15px;font-style:italic}
+.links{display:flex;gap:28px;font-size:14px}
+.links a{position:relative}.links a:after{content:"";position:absolute;left:0;bottom:-4px;height:1px;width:0;background:currentColor;transition:.3s}.links a:hover:after{width:100%}
+nav .btn{padding:10px 18px}
+nav:not(.solid) .btn-solid{background:transparent;border-color:#fff}
+.lang{font-size:12px;letter-spacing:.1em;border:1px solid currentColor;padding:6px 10px;cursor:pointer;margin-right:12px;background:none;color:inherit}
+@media(max-width:900px){.links{display:none}}
+
+/* HERO */
+.hero{position:relative;height:100svh;min-height:640px;overflow:hidden;color:#fff}
+.hero .slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.6s;animation:kb 18s linear infinite alternate}
+.hero .slide.on{opacity:1}
+@keyframes kb{from{transform:scale(1.03)}to{transform:scale(1.14)}}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,21,18,.86) 0%,rgba(14,21,18,.66) 45%,rgba(14,21,18,.32) 80%,rgba(14,21,18,.2)),linear-gradient(180deg,rgba(0,0,0,.35),transparent 22%),linear-gradient(0deg,rgba(0,0,0,.5),transparent 45%)}
+.hero-copy{text-shadow:0 1px 2px rgba(0,0,0,.35),0 4px 24px rgba(0,0,0,.4)}
+.hero .eyebrow{color:#ecd9b0;font-weight:600}
+.hero p.sub{max-width:36ch;text-wrap:balance}
+.hero p.sub span{white-space:nowrap}
+:lang(th) .eyebrow{letter-spacing:.08em}:lang(zh-Hans) .eyebrow,:lang(ja) .eyebrow{letter-spacing:.14em}
+:lang(th) .hero p.sub,:lang(zh-Hans) .hero p.sub,:lang(ja) .hero p.sub{font-style:normal}
+.hero-copy{position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:center;padding-bottom:120px}
+.hero h1{font-family:var(--caps);font-weight:500;font-size:clamp(40px,6.5vw,84px);line-height:1.02;letter-spacing:.03em}
+.hero .thline{font-family:'Noto Serif Thai',serif;font-size:clamp(22px,2.8vw,34px);margin:18px 0 22px;line-height:1.4}
+.hero .rule{width:70px;height:1px;background:var(--brass);margin-bottom:18px}
+.hero p.sub{font-family:var(--serif);font-size:22px;font-style:italic;opacity:.92}
+.hero .badge{display:inline-flex;align-items:center;gap:14px;margin-top:28px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.3);padding:10px 16px;backdrop-filter:blur(6px);width:max-content;max-width:100%}
+.hero .badge .sc{font-family:var(--serif);font-size:30px;font-weight:600;line-height:1}
+.hero .badge small{font-size:12px;line-height:1.4;opacity:.9}
+.hero-copy > *{opacity:0;transform:translateY(30px);animation:up 1s forwards}
+.hero-copy > *:nth-child(2){animation-delay:.15s}.hero-copy > *:nth-child(3){animation-delay:.3s}.hero-copy > *:nth-child(4){animation-delay:.45s}.hero-copy > *:nth-child(5){animation-delay:.6s}.hero-copy > *:nth-child(6){animation-delay:.75s}
+@keyframes up{to{opacity:1;transform:none}}
+.scrollcue{position:absolute;left:50%;bottom:22px;z-index:3;width:1px;height:50px;background:rgba(255,255,255,.3);overflow:hidden}
+.scrollcue:after{content:"";position:absolute;left:0;top:-50%;width:1px;height:50%;background:#fff;animation:cue 2s infinite}
+@keyframes cue{to{top:100%}}
+
+/* BOOKING WIDGET */
+.booker{position:relative;z-index:5;margin-top:-64px}
+.booker form{background:var(--paper);box-shadow:0 20px 60px rgba(30,25,15,.18);display:grid;grid-template-columns:1fr 1fr 1fr 1.1fr auto;gap:0;align-items:stretch}
+.booker label{display:flex;flex-direction:column;padding:16px 20px;border-right:1px solid var(--line);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.booker input,.booker select{border:0;background:none;font:500 15px var(--sans);color:var(--ink);margin-top:4px;outline:none;width:100%}
+.booker button{border:0;background:var(--green);color:#fff;font:500 14px var(--sans);letter-spacing:.08em;padding:0 30px;cursor:pointer;transition:.3s}
+.booker button:hover{background:var(--brown)}
+.booker .note{font-size:12.5px;color:var(--muted);margin-top:10px;text-align:center}
+@media(max-width:860px){.booker form{grid-template-columns:1fr 1fr}.booker label{border-bottom:1px solid var(--line)}.booker button{grid-column:1/-1;padding:18px}}
+
+/* STRIP */
+.strip{border-bottom:1px solid var(--line);padding:38px 0 30px}
+.strip .wrap{display:grid;grid-template-columns:repeat(5,1fr)}
+.strip div{display:flex;gap:12px;align-items:center;padding:0 16px;border-right:1px solid var(--line);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.strip div:last-child{border:0}
+.strip b{display:block;font-family:var(--serif);font-size:20px;color:var(--ink);letter-spacing:.02em;text-transform:none;font-weight:600}
+.strip svg{flex:none;width:30px;height:30px;stroke:var(--green);fill:none;stroke-width:1.3}
+@media(max-width:860px){.strip .wrap{grid-template-columns:1fr 1fr;gap:18px}.strip div{border:0}}
+
+section{padding:110px 0}
+
+/* REASONS / HIGHLIGHTS */
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:48px}
+.why article{background:var(--paper);padding:34px 28px;transition:.4s}
+.why article:hover{background:var(--green);color:#fff}
+.why article:hover .num{color:var(--brass)}
+.why .num{font-family:var(--serif);font-size:44px;color:var(--brown);line-height:1;transition:.4s}
+.why h3{font-family:var(--caps);font-size:17px;font-weight:500;margin:14px 0 8px;letter-spacing:.04em}
+.why p{font-size:14.5px}
+@media(max-width:860px){.why{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.why{grid-template-columns:1fr}}
+
+/* STORY */
+.story{background:var(--cream)}
+.story .grid{display:grid;grid-template-columns:1.05fr 1fr;gap:70px;align-items:center}
+.story h2{font-family:var(--caps);color:var(--brown);font-weight:500;font-size:clamp(28px,3.6vw,44px);line-height:1.15;margin:14px 0 16px}
+.story .lead{font-size:22px;margin-bottom:16px}
+.story p{margin-bottom:16px}
+.archival{position:relative;background:#e6dccb;padding:26px;transform:rotate(1.2deg);box-shadow:0 18px 40px rgba(60,40,20,.15)}
+.archival .ph{border:1px solid #b9a98c;aspect-ratio:4/3;display:grid;place-items:center;text-align:center;font-family:var(--caps);letter-spacing:.2em;font-size:13px;color:#6d5f47;background:repeating-linear-gradient(45deg,#ece3d3 0 12px,#e7dcc9 12px 24px)}
+.archival .tape{position:absolute;top:-12px;left:50%;width:90px;height:26px;background:rgba(200,185,150,.7);transform:translateX(-50%) rotate(-3deg)}
+.timeline{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:12px;margin-top:34px;text-align:center}
+.timeline b{font-family:var(--serif);font-size:30px;color:var(--brown);display:block;line-height:1}
+.timeline small{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:block;margin-top:6px}
+.timeline i{display:block;width:44px;height:1px;background:var(--brass);position:relative}
+.timeline i:after{content:"";position:absolute;right:0;top:-3px;border:3.5px solid transparent;border-left-color:var(--brass)}
+.story .tag{font-family:var(--caps);font-size:18px;letter-spacing:.14em;color:var(--green);margin-top:28px}
+@media(max-width:900px){.story .grid{grid-template-columns:1fr;gap:48px}}
+
+/* ATMOS — horizontal parallax band */
+.band{display:grid;grid-template-columns:1.1fr .7fr .7fr 1.1fr;min-height:420px;background:var(--cream)}
+.band .txt{padding:60px 44px;display:flex;flex-direction:column;justify-content:center}
+.band h3{font-family:'Noto Serif Thai',serif;font-size:22px;margin-bottom:12px}
+.band .img{overflow:hidden}.band .img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s}
+.band .img:hover img{transform:scale(1.07)}
+@media(max-width:900px){.band{grid-template-columns:1fr 1fr}.band .txt{grid-column:1/-1;padding:44px 20px}.band .img{height:260px}}
+
+/* ROOMS */
+.rooms{background:var(--green);color:#fff}
+.rooms .top{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap}
+.rooms .top p{max-width:460px;opacity:.85}
+.filters{display:flex;gap:8px;margin:38px 0 26px;flex-wrap:wrap}
+.filters button{background:none;border:1px solid rgba(255,255,255,.3);color:#fff;padding:9px 16px;font:400 13px var(--sans);letter-spacing:.05em;cursor:pointer;transition:.3s}
+.filters button.on,.filters button:hover{background:var(--paper);color:var(--green);border-color:var(--paper)}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.room{background:var(--paper);color:var(--ink);transition:transform .45s,box-shadow .45s,opacity .4s}
+.room:hover{transform:translateY(-8px);box-shadow:0 26px 50px rgba(0,0,0,.3)}
+.room.hide{display:none}
+.room .main{position:relative;aspect-ratio:4/3;overflow:hidden;cursor:zoom-in}
+.room .main img{width:100%;height:100%;object-fit:cover;transition:transform 1s}
+.room:hover .main img{transform:scale(1.06)}
+.room .pill{position:absolute;top:14px;left:14px;background:var(--brass);color:#fff;font-size:11px;letter-spacing:.14em;text-transform:uppercase;padding:5px 10px}
+.room .count{position:absolute;right:12px;bottom:12px;background:rgba(0,0,0,.55);color:#fff;font-size:12px;padding:4px 10px}
+.room .body{padding:20px 20px 18px}
+.room h3{font-family:var(--serif);font-size:25px;font-weight:600;line-height:1.1}
+.room .bed{font-size:13px;color:var(--muted);letter-spacing:.06em}
+.thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:14px 0}
+.thumbs img{aspect-ratio:4/3;object-fit:cover;cursor:pointer;opacity:.85;transition:.3s}
+.thumbs img:hover{opacity:1}
+.room .feat{font-size:14px;min-height:46px}
+.room .acts{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);margin-top:14px;padding-top:14px;font-size:13.5px;font-weight:500}
+.room .acts a.book{color:var(--green);display:flex;gap:6px;align-items:center}
+.room .acts a.book:hover{color:var(--brown)}
+.room .acts button{background:none;border:0;font:inherit;cursor:pointer;color:var(--muted);text-decoration:underline;text-underline-offset:4px}
+@media(max-width:980px){.rgrid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.rgrid{grid-template-columns:1fr}}
+
+/* REVIEWS */
+.reviews .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}
+.score{display:flex;align-items:end;gap:18px;margin:26px 0 8px}
+.score .big{font-family:var(--serif);font-size:120px;font-weight:600;line-height:.8;color:var(--green)}
+.score .lbl{font-family:var(--caps);font-size:22px;color:var(--brown)}
+.score small{display:block;font-size:13px;color:var(--muted)}
+.bars{margin-top:30px}
+.bar{display:grid;grid-template-columns:130px 1fr 40px;gap:14px;align-items:center;font-size:14px;margin-bottom:14px}
+.bar .t{height:6px;background:var(--line);position:relative;overflow:hidden}
+.bar .t i{position:absolute;inset:0 auto 0 0;width:0;background:var(--green);transition:width 1.6s cubic-bezier(.2,.8,.2,1)}
+.bar b{font-family:var(--serif);font-size:19px;text-align:right}
+.src{font-size:12px;color:var(--muted);margin-top:14px}
+.notes{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.notes figure{background:#fff;padding:12px 12px 16px;box-shadow:0 12px 30px rgba(60,40,20,.12);transition:transform .5s}
+.notes figure:nth-child(1){transform:rotate(-2deg)}.notes figure:nth-child(2){transform:rotate(2deg) translateY(30px)}
+.notes figure:hover{transform:rotate(0) scale(1.03)}
+.notes img{aspect-ratio:3/4;object-fit:cover}
+.notes figcaption{font-family:var(--serif);font-style:italic;font-size:16px;margin-top:10px;text-align:center}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:80px}
+.quotes blockquote{border-top:2px solid var(--brass);padding-top:18px;font-family:var(--serif);font-size:24px;line-height:1.3}
+.quotes cite{display:block;font:400 12px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:12px;font-style:normal}
+@media(max-width:900px){.reviews .grid{grid-template-columns:1fr}.quotes{grid-template-columns:1fr}.score .big{font-size:96px}}
+
+/* FACILITIES */
+.fac{background:var(--cream)}
+.fgrid{display:grid;grid-template-columns:repeat(8,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:40px}
+.fgrid div{text-align:center;padding:28px 8px;border-right:1px solid var(--line);font-size:13px;transition:.3s}
+.fgrid div:last-child{border:0}
+.fgrid div:hover{background:var(--paper)}
+.fgrid div:hover svg{transform:translateY(-4px)}
+.fgrid svg{width:36px;height:36px;stroke:var(--ink);fill:none;stroke-width:1.2;margin:0 auto 12px;transition:.3s}
+.fgrid small{display:block;color:var(--muted);font-size:11.5px}
+@media(max-width:900px){.fgrid{grid-template-columns:repeat(4,1fr)}.fgrid div{border-bottom:1px solid var(--line)}}
+@media(max-width:520px){.fgrid{grid-template-columns:repeat(2,1fr)}}
+.corner{display:grid;grid-template-columns:1fr 1.1fr 1fr;margin-top:70px;background:var(--paper);min-height:360px}
+.corner .img{overflow:hidden}.corner img{width:100%;height:100%;object-fit:cover}
+.corner .txt{padding:50px 44px;display:flex;flex-direction:column;justify-content:center}
+.corner h3{font-family:var(--caps);font-size:24px;font-weight:500;letter-spacing:.05em;margin:10px 0 14px}
+@media(max-width:900px){.corner{grid-template-columns:1fr}.corner .img{height:280px}.corner .txt{padding:36px 20px}}
+
+/* LOCATION */
+.loc .grid{display:grid;grid-template-columns:1fr 1.25fr;gap:60px;align-items:center}
+.dist{list-style:none;margin:26px 0 30px}
+.dist li{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px dashed var(--line);font-size:15px}
+.dist li span:last-child{font-family:var(--serif);font-size:19px;color:var(--brown);white-space:nowrap}
+.map{position:relative;background:#efe8da;aspect-ratio:5/4;border:1px solid var(--line);overflow:hidden}
+.map svg{width:100%;height:100%}
+.map .pin{animation:pulse 2.2s infinite;transform-origin:center;transform-box:fill-box}
+@keyframes pulse{0%{r:10;opacity:.6}100%{r:46;opacity:0}}
+.map text{font-family:var(--sans);font-size:13px;fill:#4d463c}
+.map .mark{font-family:var(--caps);font-size:17px;fill:var(--green);font-weight:600}
+.map path.route{stroke-dasharray:6 7;animation:dash 20s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-400}}
+@media(max-width:900px){.loc .grid{grid-template-columns:1fr}}
+
+/* MARQUEE */
+.marq{background:var(--green);color:var(--cream);overflow:hidden;white-space:nowrap;padding:18px 0}
+.marq div{display:inline-block;animation:mq 35s linear infinite;font-family:var(--caps);font-size:20px;letter-spacing:.2em}
+.marq span{margin:0 28px;color:var(--brass)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* FINAL CTA */
+.final{position:relative;color:#fff;text-align:center;padding:150px 0;overflow:hidden}
+.final .bg{position:absolute;inset:-15% 0;background:url(../img/exterior.jpg) center/cover;will-change:transform}
+.final:before{content:"";position:absolute;inset:0;background:rgba(20,32,27,.7);z-index:1}
+.final .wrap{position:relative;z-index:2}
+.final h2{font-family:var(--caps);font-size:clamp(34px,5vw,64px);font-weight:500;line-height:1.1;margin:14px 0 18px}
+.final .perks{display:flex;justify-content:center;gap:26px;flex-wrap:wrap;margin:26px 0 38px;font-size:14px}
+.final .perks span:before{content:"✓ ";color:var(--brass)}
+.final .ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.final .btn-line{background:#06c755;border-color:#06c755;color:#fff}
+.final .btn-line:hover{background:#05a948}
+.final .btn-ghost{color:#fff}.final .btn-ghost:hover{background:#fff;color:var(--ink)}
+
+footer{background:#16241f;color:#cfc6b6;padding:60px 0 100px;font-size:14px}
+footer .wrap{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px}
+footer h4{font-family:var(--caps);color:#fff;font-weight:500;letter-spacing:.1em;margin-bottom:12px}
+footer a:hover{color:#fff}
+footer .logo b{color:#fff}
+@media(max-width:760px){footer .wrap{grid-template-columns:1fr}}
+
+/* STICKY MOBILE BAR */
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--paper);box-shadow:0 -6px 24px rgba(0,0,0,.12);display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 16px;transform:translateY(110%);transition:transform .45s}
+.sticky.show{transform:none}
+.sticky .p{font-size:12px;color:var(--muted);line-height:1.3}.sticky .p b{font-family:var(--serif);font-size:20px;color:var(--ink)}
+.sticky .btn{padding:12px 18px}
+
+/* TBC + SPECS + POLICIES + GETTING HERE */
+.tbc{background:#fff3c4;color:#6b5200;font-size:.82em;padding:1px 6px;border-radius:3px;font-weight:500;white-space:nowrap}
+.specs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:12px 0 4px;font-size:12.5px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:10px 0}
+.specs div{display:grid;gap:2px;min-width:0}.specs small{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.pol .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:40px}
+.pol .pgrid div{background:var(--paper);padding:26px 24px;min-width:0}
+.pol h3{font-family:var(--caps);font-size:15px;font-weight:500;letter-spacing:.06em;margin-bottom:8px}
+.pol p{font-size:14.5px}
+@media(max-width:860px){.pol .pgrid{grid-template-columns:1fr 1fr}}@media(max-width:520px){.pol .pgrid{grid-template-columns:1fr}}
+.routes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:26px}
+.routes article{border-top:2px solid var(--brass);padding-top:16px;min-width:0}
+.routes h3{font-family:var(--serif);font-size:22px;font-weight:600;margin-bottom:6px}
+.routes p{font-size:14.5px}
+@media(max-width:860px){.routes{grid-template-columns:1fr}}
+.taxi{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;background:var(--cream);padding:20px 22px;margin-top:30px}
+.taxi .th{font-size:19px}
+.taxi button{background:var(--green);color:#fff;border:0;padding:10px 18px;font:500 13px var(--sans);cursor:pointer}
+/* LIGHTBOX */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(15,20,18,.94);display:none;align-items:center;justify-content:center;flex-direction:column}
+.lb.open{display:flex}
+.lb img{max-width:92vw;max-height:74vh;object-fit:contain;animation:fade .4s}
+@keyframes fade{from{opacity:0;transform:scale(.97)}}
+.lb .cap{color:#fff;margin-top:16px;text-align:center;font-family:var(--serif);font-size:24px}
+.lb .cap small{display:block;font:300 13px var(--sans);opacity:.75}
+.lb .x,.lb .nav{position:absolute;background:none;border:0;color:#fff;font-size:34px;cursor:pointer;padding:14px}
+.lb .x{top:10px;right:14px}.lb .prev{left:6px;top:45%}.lb .next{right:6px;top:45%}
+.lb .go{margin-top:18px}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(40px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.12s}.rv.d2{transition-delay:.24s}.rv.d3{transition-delay:.36s}
+.clip{clip-path:inset(0 0 100% 0);transition:clip-path 1.3s cubic-bezier(.7,0,.2,1)}
+.clip.in{clip-path:inset(0 0 0 0)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.clip{opacity:1;transform:none;clip-path:none}}
+.langs{display:flex;gap:2px;margin-right:12px}.langs a{font-size:12px;padding:5px 7px;border:1px solid transparent;line-height:1}.langs a[aria-current]{border-color:currentColor}.langs a:hover{border-color:currentColor}@media(max-width:560px){.logo span{display:none}.langs a{padding:5px 5px;font-size:11px}nav .btn{padding:9px 12px;font-size:12px}}</style>
+<script>
+// GA4: put the Measurement ID (G-XXXXXXX) here. Empty = analytics off.
+window.GA_ID='';
+window.track=function(name,params){if(window.gtag)gtag('event',name,params||{});};
+if(window.GA_ID){const t=document.createElement('script');t.async=true;t.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(t);
+ window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config',GA_ID);}
+</script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet">
+<style>:root{--serif:'Cormorant Garamond','Noto Serif SC',serif;--caps:'Cinzel','Noto Serif SC',serif;--sans:'Noto Sans SC',system-ui,sans-serif}.th,.hero .thline,.th *{font-family:'Noto Serif SC',serif}body{font-weight:400}</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap">
+    <a href="#top" class="logo"><img src="../img/logo.jpg" alt="Wiengket Heritage logo"><span><b>WIENGKET</b><small>Heritage 1964</small></span></a>
+    <div class="links">
+      <a href="#top" data-en="Home" data-th="หน้าแรก">首页</a>
+      <a href="#rooms" data-en="Rooms" data-th="ห้องพัก">客房</a>
+      <a href="#story" data-en="Our Story" data-th="เรื่องราว">我们的故事</a>
+      <a href="#reviews" data-en="Reviews" data-th="รีวิว">住客评价</a>
+      <a href="#facilities" data-en="Facilities" data-th="สิ่งอำนวยความสะดวก">设施</a>
+      <a href="#policies" data-en="Policies" data-th="นโยบาย">入住政策</a>
+      <a href="#location" data-en="Location" data-th="ที่ตั้ง">位置</a>
+    </div>
+    <div style="display:flex;align-items:center">
+      <div class="langs" aria-label="Language"><a href="../index.html" hreflang="en" lang="en">EN</a><a href="../th/index.html" hreflang="th" lang="th">ไทย</a><a href="../zh/index.html" hreflang="zh-Hans" lang="zh-Hans" aria-current="page">中文</a><a href="../ja/index.html" hreflang="ja" lang="ja">日本語</a></div>
+      <a href="#book" class="btn btn-solid" data-en="Book Direct" data-th="จองตรง">官网预订</a>
+    </div>
+  </div>
+</nav>
+
+<!-- 01 HERO -->
+<header class="hero" id="top">
+  <div class="slide on" style="background-image:url(../img/deluxe1.jpg)"></div>
+  <div class="slide" style="background-image:url(../img/exterior.jpg)"></div>
+  <div class="slide" style="background-image:url(../img/fam1.jpg)"></div>
+  <div class="slide" style="background-image:url(../img/deluxe2.jpg)"></div>
+  <div class="wrap hero-copy">
+    <p class="eyebrow">曼谷老城区 · 帕那空</p>
+    <h1>WIENGKET<br>HERITAGE 1964</h1>
+    <p class="thline">老城怀抱中的<br>当代魅力</p>
+    <div class="rule"></div>
+    <p class="sub" data-en="A heritage building. A contemporary stay. A local Bangkok experience." data-th="อาคารเก่าแก่ · การพักผ่อนร่วมสมัย · ประสบการณ์กรุงเทพฯ แบบคนท้องถิ่น"><span>老建筑</span> · <span>当代住宿</span> · <span>地道曼谷体验</span></p>
+    <div class="badge"><span class="sc">9.3</span><small><b>超赞 · 325 条住客评价</b><br>清洁度 9.9 · 舒适度 9.7</small></div>
+  </div>
+  <div class="scrollcue"></div>
+</header>
+
+<!-- 02 BOOKING WIDGET -->
+<div class="wrap booker" id="book">
+  <form id="bookForm">
+    <label>入住日期<input type="date" id="ci" required></label>
+    <label>退房日期<input type="date" id="co" required></label>
+    <label>入住人数<select id="gu"><option>1 位成人</option><option selected>2 位成人</option><option>3 人</option><option>4 人</option><option>家庭（2+2）</option></select></label>
+    <label>房型<select id="rm"><option>任意房型</option><option>Standard Room · Double</option><option>Superior Room · Double</option><option>Superior Room · Twin</option><option>Studio Corner · Double</option><option>Deluxe w/ Balcony · Double</option><option>Family Room · 2 × Double</option></select></label>
+    <button type="submit">查询空房 →</button>
+  </form>
+  <p class="note">通过安全的预订系统查看实时空房，即时确认。想先咨询？<a href="#" id="askLine" style="text-decoration:underline">通过 LINE 联系我们</a></p>
+</div>
+
+<!-- 03 DIRECT BENEFIT STRIP -->
+<div class="strip">
+  <div class="wrap">
+    <div><svg viewBox="0 0 32 32"><path d="M6 16l10-10h10v10L16 26z"/><circle cx="21" cy="11" r="2"/></svg><span>官网预订<b>立减 10%</b></span></div>
+    <div><svg viewBox="0 0 32 32"><path d="M4 22V10M4 18h24v4M28 22v-6a4 4 0 00-4-4H12v6"/></svg><span>客房价格<b>1,500 泰铢起</b></span></div>
+    <div><svg viewBox="0 0 32 32"><circle cx="16" cy="16" r="12"/><path d="M16 9v7l5 3"/></svg><span>入住 / 退房<b>14:00 · 12:00</b></span></div>
+    <div><svg viewBox="0 0 32 32"><path d="M7 12h16v7a7 7 0 01-7 7h-2a7 7 0 01-7-7zM23 14h2a3 3 0 010 6h-2M11 5c0 2 2 2 2 4M16 5c0 2 2 2 2 4"/></svg><span>免费<b>茶点角</b></span></div>
+    <div><svg viewBox="0 0 32 32"><path d="M16 4l3.5 7.5L28 12l-6 6 1.5 8.5L16 22l-7.5 4.5L10 18l-6-6 8.5-.5z"/></svg><span>住客评分<b>9.3 / 10</b></span></div>
+  </div>
+</div>
+
+<!-- 04 HIGHLIGHTS -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow rv">住客为何选择我们</p>
+    <h2 class="h2 rv d1" style="margin-top:12px">选择我们的四个理由</h2>
+    <div class="why">
+      <article class="rv"><div class="num">01</div><h3>步行畅游老城</h3><p data-en="The Grand Palace, Wat Pho, Khao San Road and Democracy Monument are all within walking distance — no taxis, no traffic." data-th="เดินถึงพระบรมมหาราชวัง วัดโพธิ์ ถนนข้าวสาร และอนุสาวรีย์ประชาธิปไตย ไม่ต้องเรียกแท็กซี่ ไม่ต้องเจอรถติด">大皇宫、卧佛寺、考山路和民主纪念碑都在步行范围内，无需打车，不怕堵车。</p></article>
+      <article class="rv d1"><div class="num">02</div><h3>干净舒适</h3><p data-en="Guests rate our cleanliness 9.9 and comfort 9.7. Crisp white linen, quality beds and daily housekeeping." data-th="แขกให้คะแนนความสะอาด 9.9 และความสบาย 9.7 ผ้าปูขาวสะอาด เตียงนอนคุณภาพ ทำความสะอาดทุกวัน">住客给出清洁度 9.9 分、舒适度 9.7 分。洁白床品、优质床垫，每日客房清洁。</p></article>
+      <article class="rv d2"><div class="num">03</div><h3>有故事的建筑</h3><p data-en="Stay inside the 1964 Wiengket Building — once home to Roongroj Tour, now reborn as a warm, contemporary heritage stay." data-th="พักในอาคารเวียงเกตุ ปี 1964 อดีตที่ตั้งรุ่งโรจน์ทัวร์ วันนี้กลายเป็นที่พักร่วมสมัยที่อบอุ่น">入住建于 1964 年的 Wiengket 大楼——这里曾是 Roongroj Tour 的所在地，如今焕新为温馨的当代怀旧住宿。</p></article>
+      <article class="rv d3"><div class="num">04</div><h3>用心的团队</h3><p data-en="Handwritten welcome cards, local tips and a team guests call “very special and helpful”." data-th="การ์ดต้อนรับเขียนด้วยลายมือ คำแนะนำแบบคนท้องถิ่น และทีมงานที่แขกบอกว่า “ใส่ใจเป็นพิเศษ”">手写欢迎卡、本地推荐，以及被住客称赞“非常贴心、乐于助人”的团队。</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- 05 OUR STORY -->
+<section class="story" id="story">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow rv">我们的故事</p>
+      <h2 class="rv d1">从旅行地标<br>到怀旧住宿</h2>
+      <p class="lead th rv d2">老城怀抱中的当代魅力</p>
+      <p class="rv d2" data-en="The Wiengket Building was completed in 1964. For decades this address was part of Bangkok’s travel story — home to Roongroj Tour Travel Center, where journeys began for countless travelers." data-th="อาคารเวียงเกตุสร้างแล้วเสร็จในปี 1964 ตลอดหลายทศวรรษ ที่อยู่แห่งนี้เป็นส่วนหนึ่งของเรื่องราวการเดินทางในกรุงเทพฯ ในฐานะที่ตั้งของรุ่งโรจน์ทัวร์ ทราเวล เซ็นเตอร์ จุดเริ่มต้นการเดินทางของผู้คนมากมาย">Wiengket 大楼于 1964 年落成。数十年来，这里是曼谷旅行故事的一部分——Roongroj Tour Travel Center 的所在地，无数旅程从这里出发。</p>
+      <p class="rv d3" data-en="Today, we have reimagined it as Wiengket Heritage 1964: a contemporary stay that keeps the soul of Old Bangkok — shuttered windows, wooden panelling, patterned tiles — and the rhythm of the neighbourhood right outside your door." data-th="วันนี้ เราตีความอาคารใหม่เป็น Wiengket Heritage 1964 ที่พักร่วมสมัยที่ยังคงจิตวิญญาณของเมืองเก่า ทั้งหน้าต่างบานเกล็ด ผนังไม้ และกระเบื้องลายโบราณ พร้อมจังหวะชีวิตของชุมชนอยู่หน้าประตู">如今，我们将它重新打造为 Wiengket Heritage 1964：一处保留老曼谷灵魂的当代住宿——百叶窗、木饰墙面、花砖地面，推门即是街区的生活节奏。</p>
+      <p class="tag rv">同一地址，崭新篇章</p>
+    </div>
+    <div class="rv d1">
+      <div class="archival"><span class="tape"></span><div class="ph">ARCHIVAL PHOTO<br>— WIENGKET BUILDING /<br>ROONGROJ TOUR —<br><br><small style="letter-spacing:.14em">OWNER PHOTO TO BE INSERTED</small></div></div>
+      <div class="timeline">
+        <div><b>1964</b><small>Wiengket 大楼</small></div><i></i>
+        <div><b>···</b><small>Roongroj Tour Travel Center</small></div><i></i>
+        <div><b>今天</b><small>Wiengket Heritage 1964</small></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="band">
+  <div class="txt rv"><p class="eyebrow">历史细节</p><h3>尊重原貌的设计灵感</h3><p data-en="Blue-grey shutters, lattice transoms, a vintage piano in the lobby. Every corner was restored to feel like a Bangkok home — not a museum." data-th="บานเกล็ดสีฟ้าเทา ช่องลมไม้ฉลุ เปียโนเก่าในล็อบบี้ ทุกมุมถูกบูรณะให้รู้สึกเหมือนบ้านในกรุงเทพฯ ไม่ใช่พิพิธภัณฑ์">蓝灰色百叶窗、木雕气窗、大堂里的老钢琴。每个角落都修复得像一个曼谷的家，而不是博物馆。</p></div>
+  <div class="img clip"><img src="../img/hall.jpg" alt="Hallway with lattice transom doors" loading="lazy"></div>
+  <div class="img clip"><img src="../img/piano.jpg" alt="Vintage piano in the lobby" loading="lazy"></div>
+  <div class="img clip"><img src="../img/facade.jpg" alt="Wiengket building facade" loading="lazy"></div>
+</div>
+
+<!-- 06/07 ROOMS -->
+<section class="rooms" id="rooms">
+  <div class="wrap">
+    <div class="top">
+      <div><p class="eyebrow rv">客房</p><h2 class="h2 rv d1" style="margin-top:10px">预订前<br>先看真实客房</h2></div>
+      <p class="rv d2">6 种房型，所有照片均为实拍。点击任意图片浏览完整相册，然后预订您看到的房间。</p>
+    </div>
+    <div class="filters rv">
+      <button class="on" data-f="all">全部房型</button>
+      <button data-f="couple">情侣</button>
+      <button data-f="friends">朋友 / 双床</button>
+      <button data-f="family">家庭</button>
+      <button data-f="long">长住 / 办公</button>
+    </div>
+    <div class="rgrid" id="rgrid"></div>
+  </div>
+</section>
+
+<div class="marq"><div>
+  曼谷老城区<span>✦</span>始于 1964<span>✦</span>官网预订立减 10%<span>✦</span>步行至大皇宫<span>✦</span>清洁度 9.9<span>✦</span>
+  曼谷老城区<span>✦</span>始于 1964<span>✦</span>官网预订立减 10%<span>✦</span>步行至大皇宫<span>✦</span>清洁度 9.9<span>✦</span>
+</div></div>
+
+<!-- REVIEWS -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <p class="eyebrow rv">住客评价</p>
+        <h2 class="h2 rv d1" style="margin-top:10px">住客真实评价</h2>
+        <div class="score rv d2"><span class="big" data-count="9.3">0.0</span><div><span class="lbl">超赞</span><small>来自 325 条真实住客评价</small></div></div>
+        <div class="bars">
+          <div class="bar rv"><span>清洁度</span><span class="t"><i data-w="99"></i></span><b>9.9</b></div>
+          <div class="bar rv"><span>舒适度</span><span class="t"><i data-w="97"></i></span><b>9.7</b></div>
+          <div class="bar rv"><span>位置</span><span class="t"><i data-w="92"></i></span><b>9.2</b></div>
+          <div class="bar rv"><span>总评</span><span class="t"><i data-w="93"></i></span><b>9.3</b></div>
+        </div>
+        <p class="src">评分来自 Booking.com 住客评价，数字会随时间更新。</p>
+      </div>
+      <div class="notes">
+        <figure class="rv"><img src="../img/note2.jpg" alt="Handwritten thank-you note left by guests" loading="lazy"><figcaption>“…definitely come back here.”<br><small style="font-family:var(--sans);font-style:normal;font-size:12px;color:var(--muted)">住客离店时留下的真实便条</small></figcaption></figure>
+        <figure class="rv d2"><img src="../img/note1.jpg" alt="Handwritten guest note and welcome cards" loading="lazy"><figcaption>每次入住都从一张手写欢迎卡开始。</figcaption></figure>
+      </div>
+    </div>
+    <div class="quotes">
+      <blockquote class="rv">“The beds are very comfortable.”<cite>已验证住客</cite></blockquote>
+      <blockquote class="rv d1">“Brand new… with electronic keys.”<cite>已验证住客</cite></blockquote>
+      <blockquote class="rv d2">“Our host was very special and helpful.”<cite>已验证住客</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- 08 FACILITIES -->
+<section class="fac" id="facilities">
+  <div class="wrap">
+    <p class="eyebrow rv">设施</p>
+    <h2 class="h2 rv d1" style="margin-top:10px">所需一应俱全</h2>
+    <div class="fgrid rv">
+      <div><svg viewBox="0 0 36 36"><path d="M4 26V12M4 22h28v4M32 26v-6a4 4 0 00-4-4H14v6M8 18a2 2 0 104 0 2 2 0 00-4 0"/></svg>舒适床铺<small>优质床品</small></div>
+      <div><svg viewBox="0 0 36 36"><rect x="4" y="9" width="28" height="11" rx="2"/><path d="M8 16h20M11 24c0 2-2 2-2 4M18 24c0 2-2 2-2 4M25 24c0 2-2 2-2 4"/></svg>空调<small>每间客房</small></div>
+      <div><svg viewBox="0 0 36 36"><rect x="4" y="7" width="28" height="18" rx="1"/><path d="M13 30h10M18 25v5"/></svg>电视<small>客房内</small></div>
+      <div><svg viewBox="0 0 36 36"><path d="M5 14a19 19 0 0126 0M9 19a13 13 0 0118 0M13 24a7 7 0 0110 0"/><circle cx="18" cy="28" r="1.5"/></svg>免费 Wi-Fi<small>全楼覆盖</small></div>
+      <div><svg viewBox="0 0 36 36"><path d="M12 8h5v3l2 3v16h-9V14l2-3zM21 10h5v3l2 3v14h-7"/></svg>饮用水<small>免费</small></div>
+      <div><svg viewBox="0 0 36 36"><path d="M6 20h24v2a7 7 0 01-7 7H13a7 7 0 01-7-7zM9 20V8a3 3 0 016 0M12 29l-1 3M24 29l1 3"/></svg>独立卫浴<small>含洗漱用品</small></div>
+      <div><svg viewBox="0 0 36 36"><rect x="9" y="4" width="18" height="28" rx="2"/><path d="M9 14h18M13 8v3M13 18v4"/></svg>冰箱<small>公用</small></div>
+      <div><svg viewBox="0 0 36 36"><path d="M18 9a3 3 0 113 3c-1 0-3 1-3 3v1M4 28l14-12 14 12z"/></svg>客房清洁<small>每日</small></div>
+    </div>
+
+    <!-- 09 COMPLIMENTARY CORNER -->
+    <div class="corner">
+      <div class="img clip"><img src="../img/water.jpg" alt="Drinking water and glasses in room" loading="lazy"></div>
+      <div class="txt rv">
+        <p class="eyebrow">免费服务</p>
+        <h3>茶点角</h3>
+        <p class="th" style="font-size:18px;margin-bottom:10px">所有住客在住期间均可免费使用</p>
+        <p data-en="Coffee, tea and light snacks, laid out in our shared corner for you to enjoy anytime — a small pause before the next Old Town walk." data-th="กาแฟ ชา และของว่างเล็ก ๆ ให้บริการในพื้นที่ส่วนกลาง เชิญแวะพักได้ตลอดวัน ก่อนออกไปเดินเที่ยวเมืองเก่าต่อ">公共区域提供咖啡、茶和小点心，随时享用——在下一段老城漫步前小憩片刻。</p>
+      </div>
+      <div class="img clip"><img src="../img/corner.jpg" alt="Complimentary coffee and snack corner" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- POLICIES -->
+<section class="pol" id="policies">
+  <div class="wrap">
+    <p class="eyebrow rv">预订须知</p>
+    <h2 class="h2 rv d1" style="margin-top:10px">酒店政策</h2>
+    <div class="pgrid rv">
+      <div><h3>入住 / 退房</h3><p>14:00 起入住 · 12:00 前退房<br>深夜抵达： <span class="tbc">TBC</span></p></div>
+      <div><h3>取消政策</h3><p><span class="tbc">待确认</span></p></div>
+      <div><h3>付款方式</h3><p>可用方式： <span class="tbc">TBC</span></p></div>
+      <div><h3>入住证件</h3><p><span class="tbc">TBC</span></p></div>
+      <div><h3>儿童与加床</h3><p><span class="tbc">TBC</span></p></div>
+      <div><h3>早餐</h3><p>不提供早餐。欢迎使用免费茶点角（Complimentary Refreshment Corner）。</p></div>
+      <div><h3>电梯 / 楼梯</h3><p><span class="tbc">待确认：是否有电梯</span></p></div>
+      <div><h3>吸烟</h3><p><span class="tbc">TBC</span></p></div>
+      <div><h3>宠物</h3><p><span class="tbc">TBC</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 10/11 OLD BANGKOK + LOCATION -->
+<section class="loc" id="location">
+  <div class="wrap grid">
+    <div>
+      <p class="eyebrow rv">位置</p>
+      <h2 class="h2 rv d1" style="margin-top:10px">老城中心<br>步行可达</h2>
+      
+      <ul class="dist">
+        <li class="rv"><span>考山路</span><span>≈ 600 m</span></li>
+        <li class="rv"><span>曼谷国家博物馆</span><span>步行约 9 分钟</span></li>
+        <li class="rv"><span>大皇宫 &amp; 玉佛寺</span><span>步行约 13–15 分钟</span></li>
+        <li class="rv"><span>波汶尼威寺 · 民主纪念碑</span><span>步行可达</span></li>
+        <li class="rv"><span>街头美食 &amp; 本地咖啡馆</span><span>就在门口</span></li>
+      </ul>
+      <p class="rv" style="display:flex;gap:10px;margin-bottom:24px"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s7-7 7-12a7 7 0 10-14 0c0 5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>208/4-5 Trok Sake, Tanao Road, Old Town, Bangkok 10200</p>
+      <a class="btn btn-ghost rv" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Wiengket+Heritage+1964+Bangkok">在 Google 地图中打开 <span class="arr">→</span></a>
+    </div>
+    <div class="map rv d1">
+      <svg viewBox="0 0 500 400" aria-label="Neighbourhood map">
+        <g stroke="#fff" stroke-width="10" fill="none" stroke-linecap="round">
+          <path d="M0 150 L500 120"/><path d="M180 0 L220 400"/><path d="M0 290 L500 260"/><path d="M360 0 L330 400"/><path d="M60 0 L110 400"/>
+        </g>
+        <g stroke="#e4dac7" stroke-width="3" fill="none"><path d="M0 210 L500 190"/><path d="M270 0 L280 400"/><path d="M0 60 L500 40"/></g>
+        <path class="route" d="M250 205 C230 150 190 110 130 95" stroke="#b08d57" stroke-width="2.5" fill="none"/>
+        <path class="route" d="M250 205 C300 200 350 175 390 160" stroke="#b08d57" stroke-width="2.5" fill="none"/>
+        <path class="route" d="M250 205 C220 260 150 300 110 340" stroke="#b08d57" stroke-width="2.5" fill="none"/>
+        <g fill="#7a3f2a"><circle cx="130" cy="95" r="6"/><circle cx="390" cy="160" r="6"/><circle cx="110" cy="340" r="6"/><circle cx="320" cy="70" r="6"/></g>
+        <text x="60" y="80">Khao San Road</text><text x="360" y="150">Democracy Monument</text><text x="40" y="365">Grand Palace ↙</text><text x="290" y="60">Wat Bowonniwet</text>
+        <circle class="pin" cx="250" cy="205" r="10" fill="#1f3a31"/>
+        <circle cx="250" cy="205" r="10" fill="#1f3a31"/><circle cx="250" cy="205" r="4" fill="#fff"/>
+        <text class="mark" x="195" y="240">WIENGKET</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section id="getting-here" style="padding-top:0">
+  <div class="wrap">
+    <p class="eyebrow rv">交通指南</p>
+    <h2 class="h2 rv d1" style="margin-top:10px">从机场前往</h2>
+    <div class="routes">
+      <article class="rv"><h3>从素万那普机场（BKK）</h3><p>出租车 / Grab：<span class="tbc">时间 · 费用待确认</span><br>轨道交通：<span class="tbc">路线待确认</span></p></article>
+      <article class="rv d1"><h3>从廊曼机场（DMK）</h3><p>出租车 / Grab：<span class="tbc">时间 · 费用待确认</span><br>轨道 / 巴士：<span class="tbc">路线待确认</span></p></article>
+      <article class="rv d2"><h3>最近的地铁站（MRT）</h3><p><span class="tbc">车站及步行时间待确认</span></p></article>
+    </div>
+    <div class="taxi rv">
+      <div><small class="eyebrow">出示给司机</small><p class="th" id="thAddr"><span class="tbc">泰文地址待确认</span></p></div>
+      <button type="button" id="copyAddr">复制地址</button>
+    </div>
+  </div>
+</section>
+
+<!-- 12/13 FINAL CTA + CONTACT -->
+<section class="final" id="contact">
+  <div class="bg" id="pbg"></div>
+  <div class="wrap">
+    <p class="eyebrow rv">联系 &amp; 官网预订</p>
+    <h2 class="rv d1">官网预订<br>立减 10%</h2>
+    <p class="th rv d2" style="font-size:20px">直接向酒店预订，更划算，回复更快</p>
+    <div class="perks rv d2"><span>官网预订立减 10%</span><span>无第三方手续费</span><span>直接联系酒店团队</span><span>客房 1,500 泰铢起</span></div>
+    <div class="ctas rv d3">
+      <a class="btn btn-line" href="https://line.me/R/ti/p/~0859112977" target="_blank" rel="noopener">LINE · 085 911 2977</a>
+      <a class="btn btn-ghost" href="tel:+66859112977">致电 +66 85 911 2977</a>
+      <a class="btn btn-ghost" href="https://www.instagram.com/wiengket_heritage1964" target="_blank" rel="noopener">@wiengket_heritage1964</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><a class="logo" href="#top"><img src="../img/logo.jpg" alt=""><span><b>WIENGKET</b><small>Heritage 1964</small></span></a><p style="margin-top:16px;max-width:320px">老建筑 · 当代住宿 · 地道曼谷体验</p></div>
+    <div><h4>地址</h4><p>208/4-5 Trok Sake, Tanao Road<br>Old Town, Bangkok 10200<br>入住 14:00 · 退房 12:00</p></div>
+    <div><h4>联系方式</h4><p><a href="tel:+66859112977">Tel 085 911 2977</a><br>LINE 085 911 2977<br><a href="https://www.instagram.com/wiengket_heritage1964" target="_blank" rel="noopener">Instagram @wiengket_heritage1964</a></p></div>
+  </div>
+  <div class="wrap" style="display:block;margin-top:40px;font-size:12px;opacity:.6">© Wiengket Heritage 1964 版权所有</div>
+</footer>
+
+<div class="sticky" id="sticky"><div class="p">官网预订立减 10%<br><b>1,500 泰铢起</b></div><a href="#book" class="btn btn-solid">官网预订 →</a></div>
+
+<div class="lb" id="lb">
+  <button class="x" aria-label="Close">×</button>
+  <button class="nav prev" aria-label="Previous">‹</button>
+  <img id="lbImg" alt="">
+  <div class="cap" id="lbCap"></div>
+  <a class="btn btn-solid go" id="lbGo" href="#book">预订此房 →</a>
+  <button class="nav next" aria-label="Next">›</button>
+</div>
+
+<script>
+const ROOMS=[
+ {n:"Standard Room",b:"大床",tag:"超值之选",f:["couple","long"],k:"温馨安静，墙面饰有画作，适合喜欢步行探索的独行旅客和情侣。",imgs:["std1","std2","detail","bath1","towel"]},
+ {n:"Superior Room",b:"大床",tag:"最受欢迎",f:["couple","long"],k:"明亮的高大百叶窗，配有书桌，适合长住和远程办公。",imgs:["supd1","supd2","supd3","bath3","door"]},
+ {n:"Superior Room",b:"双床",tag:"适合朋友",f:["friends","long"],k:"两张床，一个理想据点，适合结伴游览老城的朋友或同事。",imgs:["twin1","twin2","twin3","bath4"]},
+ {n:"Studio Corner",b:"大床",tag:"空间宽敞",f:["couple","long"],k:"转角房，空间更大，两面采光，可以放松慢下来。",imgs:["studio1","studio2","studio3","bath5"]},
+ {n:"Deluxe w/ Balcony",b:"大床",tag:"住客最爱",f:["couple"],k:"私人瓷砖阳台，看老城苏醒，深受情侣喜爱。",imgs:["deluxe1","deluxe2","deluxe3","balcony2","street","bath2"]},
+ {n:"Family Room",b:"2 张大床",tag:"家庭",f:["family","friends"],k:"两张四柱大床，空间充足，适合全家或小团体。",imgs:["fam1","fam2","fam3","bath3"]}
+];
+const g=document.getElementById('rgrid');
+ROOMS.forEach((r,i)=>{
+  const el=document.createElement('article');el.className='room rv'+(i%3?' d'+(i%3):'');el.dataset.f=r.f.join(' ');
+  el.innerHTML=`<div class="main" data-r="${i}" data-i="0"><img src="../img/${r.imgs[0]}.jpg" alt="${r.n} ${r.b}" loading="lazy"><span class="pill">${r.tag}</span><span class="count">⤢ ${r.imgs.length} 张照片</span></div>
+  <div class="body"><h3>${i+1}. ${r.n}</h3><div class="bed">${r.b}</div>
+  <div class="thumbs">${r.imgs.slice(1,4).map((s,j)=>`<img src="../img/${s}.jpg" data-r="${i}" data-i="${j+1}" alt="${r.n} photo ${j+2}" loading="lazy">`).join('')}</div>
+  <div class="specs"><div><small>面积</small><span class="tbc">待确认</span></div><div><small>最多入住</small><span class="tbc">TBC</span></div><div><small>每晚起价</small><span class="tbc">待确认</span></div></div>
+  <p class="feat">${r.k}</p>
+  <div class="acts"><button data-r="${i}" data-i="0">查看全部照片</button><a class="book" href="#book" data-room="${i}">预订此房 →</a></div></div>`;
+  g.appendChild(el);
+});
+// filters
+document.querySelectorAll('.filters button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.filters button').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+  document.querySelectorAll('.room').forEach(r=>r.classList.toggle('hide',b.dataset.f!=='all'&&!r.dataset.f.includes(b.dataset.f)));
+});
+// book this room -> preselect
+const rm=document.getElementById('rm');
+document.addEventListener('click',e=>{const a=e.target.closest('[data-room]');if(a){rm.selectedIndex=+a.dataset.room+1;}});
+// lightbox
+const lb=document.getElementById('lb'),li=document.getElementById('lbImg'),lc=document.getElementById('lbCap');let cr=0,ci=0;
+function show(){const r=ROOMS[cr];li.src='../img/'+r.imgs[ci]+'.jpg';lc.innerHTML=`${r.n}<small>${r.b} · 第 ${ci+1} / ${r.imgs.length} 张</small>`;}
+document.addEventListener('click',e=>{const t=e.target.closest('[data-r]');if(t&&!t.closest('#lb')){cr=+t.dataset.r;ci=+t.dataset.i;show();lb.classList.add('open');}});
+lb.querySelector('.x').onclick=()=>lb.classList.remove('open');
+lb.querySelector('.next').onclick=()=>{ci=(ci+1)%ROOMS[cr].imgs.length;show()};
+lb.querySelector('.prev').onclick=()=>{ci=(ci-1+ROOMS[cr].imgs.length)%ROOMS[cr].imgs.length;show()};
+document.getElementById('lbGo').onclick=()=>{rm.selectedIndex=cr+1;lb.classList.remove('open')};
+document.addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')lb.classList.remove('open');if(e.key==='ArrowRight')lb.querySelector('.next').click();if(e.key==='ArrowLeft')lb.querySelector('.prev').click();});
+// conversion tracking (fires only when GA_ID is set)
+document.addEventListener('click',e=>{const a=e.target.closest('a,button');if(!a)return;
+  const h=a.getAttribute('href')||'';
+  if(h.startsWith('tel:'))track('call_click');
+  else if(h.includes('line.me')||a.id==='askLine')track('line_click');
+  else if(a.closest('#bookForm')||h==='#book')track('book_click');});
+document.getElementById('copyAddr').onclick=function(){const el=document.getElementById('thAddr');
+  (navigator.clipboard?navigator.clipboard.writeText(el.innerText):Promise.reject()).then(()=>{this.textContent='Copied'}).catch(()=>{const r=document.createRange();r.selectNodeContents(el);getSelection().removeAllRanges();getSelection().addRange(r)})};
+// hero slideshow
+const sl=[...document.querySelectorAll('.hero .slide')];let s=0;setInterval(()=>{sl[s].classList.remove('on');s=(s+1)%sl.length;sl[s].classList.add('on')},5500);
+// dates default
+const d=new Date(),f=x=>x.toISOString().slice(0,10);const ciI=document.getElementById('ci'),coI=document.getElementById('co');
+ciI.value=f(new Date(d.getTime()+7*864e5));coI.value=f(new Date(d.getTime()+10*864e5));ciI.min=f(d);
+ciI.onchange=()=>{if(coI.value<=ciI.value)coI.value=f(new Date(new Date(ciI.value).getTime()+864e5))};
+// BOOKING: paste the Little Hotelier booking engine URL here. Empty = fall back to LINE.
+const BOOKING_ENGINE_URL='';
+function go(url){const a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();}
+function lineMsg(){return 'https://line.me/R/oaMessage/~0859112977/?'+encodeURIComponent(`Hello Wiengket Heritage 1964! I'd like to ask about a direct booking.\nCheck-in: ${ciI.value}\nCheck-out: ${coI.value}\nGuests: ${document.getElementById('gu').value}\nRoom: ${rm.value}`);}
+document.getElementById('bookForm').onsubmit=e=>{e.preventDefault();
+  if(BOOKING_ENGINE_URL){go(BOOKING_ENGINE_URL)}else{go(lineMsg())}
+};
+document.getElementById('askLine').onclick=e=>{e.preventDefault();go(lineMsg())};
+// reveal + bars + counter
+const io=new IntersectionObserver(es=>es.forEach(en=>{if(!en.isIntersecting)return;const t=en.target;t.classList.add('in');
+  t.querySelectorAll?.('i[data-w]').forEach(i=>i.style.width=i.dataset.w+'%');
+  if(t.querySelector?.('[data-count]')){const c=t.querySelector('[data-count]'),to=+c.dataset.count;let v=0;const st=setInterval(()=>{v+=to/50;if(v>=to){v=to;clearInterval(st)}c.textContent=v.toFixed(1)},28)}
+  io.unobserve(t)}),{threshold:.18});
+document.querySelectorAll('.rv,.clip').forEach(el=>io.observe(el));
+// nav + sticky + parallax
+const nav=document.getElementById('nav'),st=document.getElementById('sticky'),pbg=document.getElementById('pbg'),fin=document.getElementById('contact');
+addEventListener('scroll',()=>{const y=scrollY;nav.classList.toggle('solid',y>60);st.classList.toggle('show',y>innerHeight*.9&&innerWidth<900);
+  const r=fin.getBoundingClientRect();if(r.top<innerHeight&&r.bottom>0)pbg.style.transform=`translateY(${(r.top-innerHeight/2)*-.15}px)`;},{passive:true});
+</script>
+</body>
+</html>
